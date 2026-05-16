@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+env/
+
+# Data & Models (too large for git)
+data/raw/
+data/processed/
+checkpoints/
+logs/
+
+# Secrets
+.env
+mlflow.db
+
+# OS
+.DS_Store
+Thumbs.db
