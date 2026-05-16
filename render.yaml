@@ -1,11 +1,11 @@
 services:
   - type: web
     name: lstm-stock-predictor
-    env: python
-    buildCommand: pip install -r requirements_render.txt
-    startCommand: python app.py
+    runtime: python
+    buildCommand: pip install --upgrade pip && pip install -r requirements_render.txt
+    startCommand: gunicorn "app:create_app()" --bind 0.0.0.0:$PORT --workers 1 --timeout 120
     envVars:
       - key: SECRET_KEY
         generateValue: true
       - key: PYTHON_VERSION
-        value: 3.11.0
+        value: 3.11.9

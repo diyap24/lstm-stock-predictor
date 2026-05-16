@@ -194,4 +194,10 @@ def create_app() -> Flask:
 if __name__ == "__main__":
     app = create_app()
     app.run(host="0.0.0.0", port=config.dashboard.port, debug=True)
-    
+
+# Render needs this
+import os
+if __name__ == "__main__":
+    app = create_app()
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
