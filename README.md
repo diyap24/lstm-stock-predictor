@@ -24,7 +24,7 @@
 
 ### Industrial-grade stock price prediction powered by deep learning
 
-[**Live Demo**](https://lstm-stock-predictor.onrender.com) · [**Documentation**](#documentation) · [**Report Bug**](issues) · [**Request Feature**](issues)
+[**Live Demo**](https://lstm-stock-predictor-5vyj.onrender.com/)
 
 <br/>
 
@@ -601,7 +601,7 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
 <div align="center">
 
-Built with PyTorch · Flask · Chart.js
+Built by [Diya Patel](https://github.com/diyap24) with PyTorch · Flask · Chart.js
 
 **[⬆ Back to Top](#lstm-stock-intelligence-platform)**
 
